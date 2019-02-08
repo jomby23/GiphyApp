@@ -1,0 +1,15 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Sign In" %}{% endblock %}
+
+<div class="container">
+    <div class="item">
+        <div class="accountContainer">
+            <div style="background:red;">
+                {% block content %} {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>

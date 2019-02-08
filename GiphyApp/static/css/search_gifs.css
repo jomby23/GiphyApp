@@ -1,0 +1,62 @@
+.search_bar {
+    font-size: 24px;
+    width: 90%;
+}
+
+.search_bar_container {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.small_text {
+    width: 150px;
+
+}
+
+.gif_container
+{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 70vh;
+}
+
+/* Style the search field */
+div.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 90%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+div.example button {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+div.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+div.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}

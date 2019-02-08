@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block CDNs %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/search_gifs.css' %}" type="text/css" media="screen"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{% endblock CDNs %}
+
+{% block javascript %}
+    <script src="{% static 'javascript/profile.js' %}"></script>
+{% endblock javascript %}
+
+{% block title %}Profile{% endblock title %}
+
+{% block content %}
+    <div class="search_bar_container">
+        <div class="example">
+          <input id="search_text" type="text" placeholder="Search GIFs...">
+          <button id="search_button" type="button"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <h4 class="text-center">
+        <font color="white">Saved GIFs</font>
+    </h4>
+    <div id="gif_container" class="container">
+        {% for gif in gifs %}
+            {% include 'gif_tile.html' with gif_path=gif.gif_path gif_url=gif.gif_url %}
+        {% endfor %}
+    </div>
+{% endblock content %}
+

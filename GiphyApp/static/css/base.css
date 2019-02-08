@@ -1,0 +1,44 @@
+/* center the login forms */
+.container
+{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 90vh;
+}
+.item
+{
+     background-color: #cc5500;
+     border-radius: 10px;
+     width: 500px;
+     height: 300px;
+     background: rgb(204, 85, 0); /* Fallback for older browsers without RGBA-support */
+     background: rgba(204, 85, 0, 0.8);
+     display:inline-block;
+}
+
+.accountContainer
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* change the background color */
+.navbar-custom {
+    background-color: #cc5500;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
