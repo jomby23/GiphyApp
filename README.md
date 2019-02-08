@@ -6,15 +6,20 @@ Notes to grader:
   app can get tedious. I hope that you enjoy this app, but more importantly, regardless of the result, I would love
   to hear feedback on how to improve (if permissible by HEB, of course).
   
-  You will find the overwhelming majority of the code in two places:
+  Here is a brief walkthrough of my code::
+  
   #####/GiphyApp/static/javascript: 
   This contains all of my front-end code. Most of the interactions being done are via AJAX, so most of my logic is here.
+  
   #####/GiphyApp/views.py: 
   This is my backend code. It is very minimal. It really only enforces logins, and talks to the DB for the front-end.
+  
   #####/GiphyApp/urls.py: 
   The routing table.
+  
   #####/GiphyApp/settings: 
   All of my integrations and Django-specific settings. This is separated by environment - local and integration.
+  
   #####/GiphyApp/models: 
   My one model that I had to create for GIF storage.
 
